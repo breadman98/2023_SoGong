@@ -3,13 +3,14 @@ import MainLayout from "../components/layouts/mainLayout/MainLayout";
 import styled from "styled-components";
 
 const Test = styled.div`
-  color: ${(props) => props.theme.colors.red_74};
+  color: ${(props) => props.theme.colors.primary};
 `;
 const Home = () => {
   return (
     <>
-      <MainLayout />
-      <Test>home</Test>
+      <MainLayout>
+        <Test>home</Test>
+      </MainLayout>
     </>
   );
 };
